@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>EDEN</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><!-- Bootstrap -->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"><!-- fontawesome -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>    
+    <script>
+        $(function() {
+            //ページトップへのスクロール
+            $('#pagetop').click(function () {
+                //id名#pagetopがクリックされたら、以下の処理を実行
+                $("html,body").animate({scrollTop:0},"300");
+            });
+            //ページトップの出現
+            $('#pagetop').hide();
+            $(window).scroll(function () {
+                if($(window).scrollTop() > 0) {
+                    $('#pagetop').slideDown(600);
+                } else {
+                    $('#pagetop').slideUp(600);
+                }
+            });
+            //ホバーイベント
+            $("#pagetop").mouseover(function(){
+                $(this).animate({
+                    bottom:"0px"
+                },300);
+            });
+            $("#pagetop").mouseout(function(){
+                $(this).animate({
+                    bottom:"-60px"
+                },300);
+            });
+        });
+
+        $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+<!-- Jquery -->
+
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="responsive.css">
+
+</head>
+
+<body>
+
+<header>
+    
+  <div class="container">
+
+    <div class="header-top">
+
+      <h1><a href="https://edenjapan.life" title="EDEN"> < /EDEN > </a></h1>
+
+      <nav class="navbar justify-content-end">
+
+        <ul>
+          <li><a href="#1" title="">ABOUT</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#2" title="">CURRICULUM</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#3" title="">SUPPORT</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#4" title="">PRICE</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#5" title="">FLOW</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#6" title="">FAQ</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#7" title="">CONTACT</a></li>
+        </ul>
+
+      </nav>
+      
+    </div>
+
+    <div class="header-title text-center">
+
+      <p>平成最後の秋</p>
+      <p>フロントエンドエンジニア</p>
+      <p>になる3ヶ月</p>
+      
+    </div>
+
+    <div class="header-title-sp text-center">
+
+    	<p>平成<br>最後の秋</p>
+    	<p class="header-title-sp-p">フロント<br>エンド<br>エンジニア</p>
+    	<p>になる3ヶ月</p>
+    	
+    </div>
+
+    <div class="header-btn text-center">
+      
+      <button type="button" class="btn">! 毎月3名限定 !</button>
+
+    </div>
+    
+  </div>
+
+</header><!-- header -->
+
+<div class="about-wrapper" id="1">
+
+  <div class="aw-title text-center">
+
+    <h1>ABOUT</h1>
+    
+  </div>
+
+  <div class="container">
+
+    <div class="aw-main">
+
+      <div class="awm-img">
+
+        <img src="img/gradation.png" alt="">
+        
+      </div>
+
+      <div class="awm-p1">
+
+        <p>EDENは</p>
+
+        <p>プログラミングの学習支援から</p>
+
+        <p>お仕事獲得までを実質無料で完全サポート。</p>
+
+        <i class="far fa-times-circle fa-4x"></i>
+        
+      </div>
+
+      <div class="awm-p2">
+
+        <p>未経験からはじめて3ヶ月で</p>
+
+        <p>フリーランスのフロントエンドエンジニア</p>
+
+        <p>として活躍できるようになる。</p>
+        
+      </div>
+      
+    </div>
+
+    <div class="awm-last">
+
+      <p><span class="awml-span1"> < </span> <span class="awml-p"> そんな新しい道に踏み出すためのすべてがここにそろっています。 </span> <span class="awml-span2"> > </span></p>
+      
+    </div>
+    
+  </div>
+
+  <div class="awm-last-sp">
+
+  	<span class="awml-span1-sp"> < </span> 
+
+  	<p class="awml-p-sp"> そんな新しい道に<br>踏み出すためのすべてが<br>ここにそろっています。 </p>
+
+  	<span class="awml-span2-sp"> > </span>
+  	
+  </div>
+  
+</div><!-- about-wrapper -->
+
+<div class="info-wrapper">
+
+  <div class="container">
+
+    <div class="iw-title text-center">
+
+      <h1>独学でのプログラミングは難しい</h1>
+
+      <p class="iw-title-p">独学の場合、9割の人が挫折してしまうと言われています</p>
+
+      <p class="iw-title-p-sp">独学の場合、<br><br>9割の人が挫折してしまう<br><br>と言われています</p>
+      
+    </div>
+
+    <div class="iw-list">
+
+      <ul>
+        <li><span><i class="far fa-check-square"></i></span>適切な学習内容がわからない...</li>
+      </ul>
+
+      <ul>
+        <li><span><i class="far fa-check-square"></i></span>入門書が難しすぎる...</li>
+      </ul>
+
+      <ul>
+        <li><span><i class="far fa-check-square"></i></span>覚えることが多すぎる...</li>
+      </ul>
+
+      <ul>
+        <li><span><i class="far fa-check-square"></i></span>エラーが直らない...</li>
+      </ul>
+
+      <ul>
+        <li><span><i class="far fa-check-square"></i></span>質問できる人がいない...</li>
+      </ul>
+
+      <ul>
+        <li><span><i class="far fa-check-square"></i></span>モチベーションが続かない...</li>
+      </ul>
+
+      <ul>
+        <li><span><i class="far fa-check-square"></i></span>学習で壁にぶつかり、解決策がわからない...</li>
+      </ul>
+
+      <ul>
+        <li><span><i class="far fa-check-square"></i></span>フリーランスになりたいけど、周りにそんな人いない...</li>
+      </ul>
+      
+    </div>
+
+    <i class="fas fa-question fa-3x iw-q-1"></i>
+    <i class="fas fa-question fa-3x iw-q-2"></i>
+
+    <div class="iw-image">
+
+      <img src="img/06.png" alt="">
+      
+    </div>
+
+    <div class="iw-last text-center">
+
+      <p>EDENは、これらの不安や悩みを解決するために生まれました</p>
+      
+    </div>
+
+    <div class="iw-last-sp">
+
+    	<p>EDENは、<br>これらの不安や悩みを<br>解決するために生まれました</p>
+    	
+    </div>
+
+    <div class="triangle">
+      
+    </div>
+    
+  </div>
+  
+</div><!-- info-wrapper -->
+
+<div class="merit-wrapper">
+
+  <div class="mw-title text-center">
+
+    <h1>3つのメリット</h1>
+    
+  </div>
+
+  <div class="mw-main">
+
+    <div class="container">
+
+      <div class="mwm-p1">
+
+        <p class="text-center mwm-p-title">【実質！】</p>
+
+        <p class="text-center"><span class="mwm-span-1">0</span>円</p>
+
+        <p class="mwm-m">他社のプログラミングスクールは20-</p><p>50万円と高額ですが、EDENは講座費</p><p>用10万円（税別）です。さらに講座費</p><p>用の10万円を稼げるまでのサポート付</p><p>きなので、実質0円での参加が可能で</p><p>す。</p>
+        
+      </div>
+
+      <div class="mwm-p2">
+
+        <p class="text-center mwm-p-title">【日本初！】</p>
+
+        <p class="text-center"><span class="mwm-span-2">フリーランス</span>特化型スクール</p>
+
+        <p class="mwm-m">プログラミングスクールは就職型や転職型が圧倒</p><p>的に多いですが、EDENは日本初のフリーランスに</p><p>特化したスクールです。現役のフリーランスエン</p><p>ジニアがあなたを徹底サポートします。</p>
+        
+      </div>
+
+      <div class="mwm-p3">
+
+        <p class="text-center mwm-p-title">【マンツーマン！】</p>
+
+        <p class="text-center"><span class="mwm-span-3">超少人数制</span></p>
+
+        <p class="mwm-m">EDENは、毎月限定3名の募集です。</p><p>3名限定の理由は、成果を確実に出す</p><p>為のサポートが行き届くギリギリの人</p><p>数だからです。さらに、本気でフリー</p><p>ランスエンジニアになりたい方のみ、</p><p>ご参加いただけます。</p>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="mw-main-sp">
+
+    <div class="container">
+
+      <div class="mwm-p1-sp">
+
+        <p class="text-center mwm-p-title-sp">【実質！】</p>
+
+        <p class="text-center"><span class="mwm-span-1-sp">0</span>円</p>
+
+        <p class="mwm-m-sp text-center">他社の<br>プログラミングスクールは<br>25-50万円と高額ですが、<br>EDENは<br>講座費用10万円（税別）です。<br>さらに講座費用の<br>10万円を稼げるまでの<br>サポート付きなので<br>実質0円での参加が可能です。</p>
+        
+      </div>
+
+      <div class="mwm-p2-sp">
+
+        <p class="text-center mwm-p-title-sp mwm-p-title-sp-2">【日本初！】</p>
+
+        <p class="text-center"><span class="mwm-span-2-sp">フリーランス</span><span class="mwm-span-2-sp-2">特化型スクール</span></p>
+
+        <p class="mwm-m-sp text-center mwm-m-sp-2">プログラミングスクールは<br>就職型や転職型が<br>圧倒的に多いですが、<br>EDENは日本初の<br>フリーランスに<br>特化したスクールです。<br>現役の<br>フリーランスエンジニアが<br>あなたを徹底サポートします。</p>
+        
+      </div>
+
+      <div class="mwm-p3-sp">
+
+        <p class="text-center mwm-p-title-sp mwm-p-title-sp-3">【マンツーマン！】</p>
+
+        <p class="text-center"><span class="mwm-span-3-sp">超少人数制</span></p>
+
+        <p class="mwm-m-sp text-center mwm-m-sp-3">EDENは、<br>毎月限定3名の募集です。<br>3名限定の理由は、<br>成果を確実に出す為の<br>サポートが行き届く<br>ギリギリの人数だからです。<br>さらに、<br>本気でフリーランスエンジニアに<br>なりたい方のみ、<br>ご参加いただけます。</p>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</div><!-- merit-wrapper -->
+
+<div class="school-wrapper">
+
+  <div class="sw-title text-center">
+
+    <h1>EDENで学べる3つのこと</h1>
+    
+  </div>
+
+  <div class="sw-main">
+
+    <div class="container">
+
+      <div class="swm-1">
+
+        <img src="img/07.png" alt="">
+
+        <div class="swm-p">
+
+          <p>フリーランスのための<br>プログラミングスキル</p>
+          
+        </div>
+        
+      </div>
+
+      <div class="swm-2">
+
+        <img src="img/08.png" alt="">
+
+        <div class="swm-p">
+
+          <p>フリーランスのための<br>営業術</p>
+          
+        </div>
+        
+      </div>
+
+      <div class="swm-3">
+
+        <img src="img/09.png" alt="">
+
+        <div class="swm-p">
+
+          <p>フリーランスのための<br>クライアントワーク術</p>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="sw-last text-center">
+
+    <p>EDENでは、フリーランスとして <span>「食っていく」</span> ために必要なスキルを学んでいきます。</p>
+    
+  </div>
+
+  <div class="sw-last-sp text-center">
+
+    <p>EDENでは、<br>フリーランスとして <br><span>「食っていく」</span> <br>ために必要なスキルを学んでいきます。</p>
+    
+  </div>
+  
+</div><!-- school-wrapper -->
+
+<div class="curriculum-wrapper" id="2">
+
+  <div class="cw-title text-center">
+
+    <h1>CURRICULUM</h1>
+    
+  </div>
+
+  <div class="container">
+
+    <div class="cw-main">
+
+      <div class="cw-main-border">
+
+        <div class="cw-main-b-1">
+
+      <div class="cwm-1">
+
+        <p class="text-center cwm-1-first-p">「プログラミング学習から案件獲得まで」をテーマに短期間で結果を出すカリキュラム</p>
+
+        <div class="cwm-1-list">
+
+         <div class="cwm1list-1">
+
+          <p><img src="img/html.png" alt=""><img src="img/css.png" alt=""><br><img src="img/Bootstrap-Logo.png" alt=""><img src="img/jquery_logo.png" alt=""></p>
+           
+         </div>
+
+         <div class="cwm1list-2">
+
+          <p><img src="img/php.png" alt=""><br><img src="img/mysql.png" alt=""><img src="img/wordpress_logo.png" alt=""></p>
+           
+         </div>
+
+         <div class="cwm1list-3">
+
+          <p>実務経験を積むための<br>クラウドソーシング<br>活用術</p>
+           
+         </div>
+
+         <div class="cwm1list-4">
+
+          <p>仕事に困らない<br>フリーランス<br>営業術</p>
+           
+         </div>
+
+          <div class="cwm1list-box1 text-center">
+
+              <p> &lt; &frasl; &gt;<span>オンライン学習＋課題《6週間》 </span></p>
+           
+          </div>
+
+          <div class="cwm1list-box2 text-center">
+
+              <p><i class="fas fa-headset"></i>案件獲得サポート《6週間》</p>
+            
+          </div> 
+          
+        </div>
+
+        <div class="cwm-1-list-p1">
+
+            <p>受講開始</p>
+            	
+        </div>
+
+        <div class="cwm-1-list-p2">
+
+            <p>受講終了</p>
+            	
+        </div>
+
+    <div class="cw-last text-center">
+
+      <p>基礎的なスキルを身につけ、スキルをお金に変えることを学んでいきます。</p>
+    
+    </div>
+
+  </div><!-- cwm-1 -->
+
+  </div><!-- cw-main-b-1 -->
+
+    </div><!-- cw-main-border -->
+
+    </div><!-- cw-main -->
+    
+  </div><!-- container -->
+
+  <div class="cw-main-sp">
+
+  	<div class="container">
+
+  		<div class="cwm-sp-title text-center">
+
+  			<p>「プログラミング学習から案件獲得まで」を</p>
+
+  			<p>テーマに短期間で結果を出すカリキュラム</p>
+  		
+  		</div>
+
+  		<div class="cwm-sp-details">
+
+  			<div class="cwm-sp-d1">
+
+  				<img src="img/html.png" alt="">
+  				<img src="img/css.png" alt="">
+  				<img src="img/Bootstrap-Logo.png" alt="">
+  				<img src="img/jquery_logo.png" alt="">
+  				
+  			</div>
+
+  			<div class="cwm-sp-d2">
+
+  				<img src="img/php.png" alt="">
+  				<img src="img/mysql.png" alt="">
+  				<img src="img/wordpress_logo.png" alt="">
+  				
+  			</div>
+
+  			<div class="cwm-sp-d3 text-center">
+
+  				<p>実務経験を積むためのクラウドソーシング活用術</p>
+  				
+  			</div>
+
+  			<div class="cwm-sp-d4 text-center">
+
+  				<p>仕事に困らないフリーランス営業術</p>
+  				
+  			</div>
+
+  			<div class="cwm-sp-d-box1 text-center">
+
+  				<p> &lt; &frasl; &gt; </p>
+  				<p class="cwm-sp-d-box1-p">オンライン学習＋課題《6週間》</p>
+  				
+  			</div>
+
+  			<div class="cwm-sp-d-box2 text-center">
+
+  				<p><i class="fas fa-headset"></i></p>
+  				<p class="cwm-sp-d-box1-p">案件獲得サポート《6週間》</p>
+  				
+  			</div>
+
+  			<div class="cwm-sp-last">
+
+  				<div class="cwm-sp-last-p">
+
+  					<p>受講開始</p>
+  					
+  				</div>
+
+  				<div class="cwm-sp-last-p2">
+
+  					<p>受講終了</p>
+  					
+  				</div>
+  				
+  			</div>
+  			
+  		</div><!-- cwm-sp-details -->
+
+  		<div class="cw-main-sp-last text-center">
+
+  			<p>基礎的なスキルを身につけ、<br>スキルをお金に変えることを学んでいきます。</p>
+  			
+  		</div>
+  		
+  	</div>
+  	
+  </div><!-- cw-main-sp -->
+  
+</div><!-- curriculum-wrapper -->
+
+<div class="support-wrapper" id="3">
+
+  <div class="sw-title text-center">
+
+    <h1>SUPPORT</h1>
+    
+  </div>
+
+  <div class="sw-main sw-main2-sp">
+
+    <div class="container">
+
+    <div class="swm-top">
+
+      <p class="text-center">現役フリーランスエンジニアが徹底サポート</p>
+      
+    </div><!-- swm-top -->
+
+    <div class="swm-left text-center">
+
+      <p> 《　私がサポートします！　》 </p>
+
+      <img src="img/eden.png" alt="">
+
+      <p class="swml-p">Zizi 【EDEN代表】</p>
+      
+    </div>
+
+    <div class="swm-center">
+
+      <i class="fas fa-angle-double-right fa-10x"></i>
+      
+    </div>
+
+    <div class="swm-right text-center">
+
+      <p>《フリーランスフロントエンジニア》</p>
+      <p>大学卒業後に独立し、<br>リゾバ4ヶ月で100万円稼いだり、<br>フィリピン留学や豪ワーホリにいきました。<br>文系未経験からフリーランスエンジニアになり、<br>北海道の大手制作会社がクライアントに。<br>フリーランス2ヶ月目で売上50万。<br><span>みなさんとお話できること楽しみにしています！</span></p>
+      
+    </div>
+
+    <div class="swm-sp-p text-center">
+
+    	<p>みなさんと</p>
+
+    	<p>お話できること楽しみにしています！</p>
+    	
+    </div>
+
+    </div>
+    
+  </div><!-- sw-main -->
+
+  <div class="sw-details">
+
+    <div class="container">
+
+    <div class="swd-1">
+
+      <img src="img/call2.jpg" alt="">
+
+      <p class="swd-p">マンツーマンビデオサポート</p>
+
+      <p class="sankaku-border"></p>
+
+      <p class="sankaku">▼</p>
+
+      <p class="swd-sp-p">月に1回ビデオチャットを使って<br>マンツーマンサポートを受けられます。</p>
+      
+    </div>
+
+    <div class="swd-2">
+
+      <img src="img/boot1.jpg" alt="">
+
+      <p class="swd-p">オンラインチャットサポート</p>
+
+      <p class="sankaku-border"></p>
+
+      <p class="sankaku">▼</p>
+
+      <p class="swd-sp-p">チャットサポートでは24時間質問ができ、<br>原則一日以内に回答をもらうことができます。</p>
+      
+    </div>
+
+    <div class="swd-3">
+
+      <img src="img/homework.jpg" alt="">
+
+      <p class="swd-p">回数無制限の課題レビュー</p>
+
+      <p class="sankaku-border"></p>
+
+      <p class="sankaku">▼</p>
+
+      <p class="swd-sp-p">課題ができるようになるまで<br>何度でもレビューを受けることができます。</p>  
+
+    </div>
+
+    </div>
+    
+  </div><!-- sw-details -->
+  
+</div><!-- support-wrapper -->
+
+<div class="price-wrapper" id="4">
+
+  <div class="pw-title text-center">
+
+    <h1>PRICE</h1>
+    
+  </div>
+
+  <div class="pw-subtitle text-center">
+
+    <p>他のスクールと比較すると</p>
+
+    <p>EDENの圧倒的なコストパフォーマンスをご確認いただけます。</p>
+    
+  </div>
+
+  <div class="pw-subtitle-sp text-center">
+
+    <p>他のスクールと比較すると</p>
+
+    <p>EDENの圧倒的なコストパフォーマンスを</p>
+
+    <p>ご確認いただけます。</p>
+    
+  </div>
+
+  <div class="pw-list text-center">
+
+    <div class="container">
+
+    <table>
+      <thead>
+        <tr>
+          <th class="pw-list1"></th>
+          <th class="pw-eden"> < /EDEN > </th>
+          <th class="pw-list2">A社</th>
+          <th class="pw-list2">B社</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td class="pw-list1">料金</td>
+          <td class="pw-eden-list">100,000円</td>
+          <td class="pw-list2">438,000円</td>
+          <td class="pw-list2">179,000円</td>
+        </tr>
+
+        <tr>
+          <td class="pw-list1">学習形態</td>
+          <td class="pw-eden-list">オンライン完結</td>
+          <td class="pw-list2">会場とオンライン</td>
+          <td class="pw-list2">オンライン完結</td>
+        </tr>
+
+        <tr>
+          <td class="pw-list1">サポート</td>
+          <td class="pw-eden-list">現役エンジニア</td>
+          <td class="pw-list2">スクール講師</td>
+          <td class="pw-list2">大学生や卒業生中心</td>
+        </tr>
+
+        <tr>
+          <td class="pw-list1">マンツーマンレッスン</td>
+          <td class="pw-eden-list">◯</td>
+          <td class="pw-list2">◯</td>
+          <td class="pw-list2">×</td>
+        </tr>
+
+        <tr>
+          <td class="pw-list1">チャットサポート</td>
+          <td class="pw-eden-list">◯</td>
+          <td class="pw-list2">◯</td>
+          <td class="pw-list2">◯</td>
+        </tr>
+
+        <tr>
+          <td class="pw-list1">案件獲得サポート</td>
+          <td class="pw-eden-list">◯</td>
+          <td class="pw-list2">×</td>
+          <td class="pw-list2">×</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    </div>
+    
+  </div><!-- pw-list -->
+  
+</div><!-- price-wrapper -->
+
+<div class="flow-wrapper" id="5">
+
+  <div class="fw-title text-center">
+
+    <h1>FLOW</h1>
+    
+  </div>
+
+  <div class="fw-subtitle text-center">
+
+    <p>受講の流れ</p>
+    
+  </div>
+
+  <div class="fw-main">
+
+    <div class="container">
+
+      <div class="fwm-1">
+
+        <div class="hexagon"><span></span></div>
+
+        <img src="img/icon_155512_64.png" alt="">
+
+        <h5>面談＋選考</h5>
+
+        <p class="sankaku-border-2"></p>
+
+        <p class="sankaku-2">▼</p>
+
+        <p>当プログラムが<br>必要か不要かも含め、<br>一度面談させていただきます。<br>選考では<br>コミュニケーション能力や<br>モチベーションの高さを<br>重視してチェックさせて頂きます。</p>
+        
+      </div><!-- fwm-1 -->
+
+      <div class="fwm-yajirushi-1">
+
+        <i class="fas fa-angle-double-right fa-4x"></i>
+        
+      </div>
+
+      <div class="fwm-2">
+
+        <div class="hexagon"><span></span></div>
+
+        <img src="img/study.png" alt="">
+
+        <h5>オンライン学習+課題</h5>
+
+        <p class="sankaku-border-2 sb2-2"></p>
+
+        <p class="sankaku-2 s2-2">▼</p>
+
+        <p>まずは<br>プログラミングの基礎から<br>学習・課題をこなしましょう。<br>案件獲得の<br>ステップに進むためには<br>一定以上の課題を<br>クリアする必要があります。</p>
+        
+      </div><!-- fwm-2 -->
+
+      <div class="fwm-yajirushi-2">
+
+        <i class="fas fa-angle-double-right fa-4x"></i>
+        
+      </div>
+
+      <div class="fwm-3">
+
+        <div class="hexagon"><span></span></div>
+
+        <img src="img/daller.png" alt="">
+
+        <h5>案件獲得</h5>
+
+        <p class="sankaku-border-2 sb2-3"></p>
+
+        <p class="sankaku-2 s2-3">▼</p>
+
+        <p>今まで<br>学習してきたスキルを<br>お金に変えていくために、<br>お仕事を探していきます。<br>フリーランスが<br>案件を獲得する秘訣も<br>お教えいたします。</p>
+        
+      </div><!-- fwm-3 -->
+
+      <div class="fwm-yajirushi-3">
+
+        <i class="fas fa-angle-double-right fa-4x"></i>
+        
+      </div>
+
+      <div class="fwm-4">
+
+        <div class="hexagon"><span></span></div>
+
+        <img src="img/graduation.png" alt="">
+
+        <h5>卒業、フリーランスへ</h5>
+
+        <p class="sankaku-border-2 sb2-4"></p>
+
+        <p class="sankaku-2 s2-4">▼</p>
+
+        <p>受講料である<br>10万円を稼いで卒業です。<br>あなたはもう<br>立派なフリーランスです。<br>実務経験を積むことで<br>どんどんスキルアップを<br>していきましょう。</p>
+        
+      </div><!-- fwm-4 -->
+      
+    </div>
+    
+  </div><!-- fw-main -->
+  
+</div><!-- flow-wrapper -->
+
+<div class="faq-wrapper" id="6">
+
+  <div class="faqw-title text-center">
+
+    <h1>FAQ</h1>
+    
+  </div>
+
+  <div class="faqw-main text-center">
+
+    <div class="container">
+
+    <div class="q-1">
+
+      <h5>Q1 未経験でも受講可能ですか？</h5>
+
+      <p>はい、可能です。</p>
+      <p>しかし、本気の方のみ募集しているため、</p>
+      <p>面談の際にお断りすることがあります。</p>
+      
+    </div>
+
+    <div class="q-2">
+
+      <h5>Q2 質問はいつでもできますか？</h5>
+
+      <p>質問は24時間受け付けています。</p>
+      <p>わからない点やレビューに関しても</p>
+      <p>Slack上で対応しております。</p>
+      
+    </div>
+
+    <div class="q-3">
+
+      <h5>Q3 他のスクールとの違いはなんですか？</h5>
+
+      <p>EDENではフリーランスを育てるため、</p>
+      <p>案件獲得までを</p>
+      <p>サポートしていることが特徴です。</p>
+      
+    </div>
+
+    <div class="q-4">
+
+      <h5>Q4 どのくらい学習時間が必要ですか？</h5>
+
+      <p>平日：3時間</p>
+      <p>休日：4時間</p>
+      <p>合計23時間/週が目安です。</p>
+      
+    </div>
+
+    <div class="q-5">
+
+      <h5>Q5 地方や海外からの参加は可能ですか？</h5>
+
+      <p>EDENはオンライン完結サービスのため、</p>
+      <p>国内、海外どこからでも参加が可能です。</p>
+      <p>遠隔でもしっかりサポートが受けられます。</p>
+      
+    </div>
+
+    <div class="q-6">
+
+      <h5>Q6 どのような学習形態ですか？</h5>
+
+      <p>Slack上でのやりとりになります。</p>
+      <p>基本的には</p>
+      <p>テキストやzipファイルのやりとりです。</p>
+      
+    </div>
+    
+  </div>
+
+  </div><!-- faqw-main -->
+
+  <div class="faqw-main-sp text-center">
+
+  	<div class="q-1-sp">
+
+      <h5>Q1 未経験でも受講可能ですか？</h5>
+
+      <p>はい、可能です。</p>
+      <p>しかし、本気の方のみ募集しているため、</p>
+      <p>面談の際にお断りすることがあります。</p>
+      
+    </div>
+
+    <div class="q-2-sp">
+
+      <h5>Q2 質問はいつでもできますか？</h5>
+
+      <p>質問は24時間受け付けています。</p>
+      <p>わからない点やレビューに関しても</p>
+      <p>Slack上で対応しております。</p>
+      
+    </div>
+
+    <div class="q-3-sp">
+
+      <h5>Q3 他のスクールとの違いはなんですか？</h5>
+
+      <p>EDENではフリーランスを育てるため、</p>
+      <p>案件獲得までを</p>
+      <p>サポートしていることが特徴です。</p>
+      
+    </div>
+
+    <div class="q-4-sp">
+
+      <h5>Q4 どのくらい学習時間が必要ですか？</h5>
+
+      <p>平日：3時間</p>
+      <p>休日：4時間</p>
+      <p>合計23時間/週が目安です。</p>
+      
+    </div>
+
+    <div class="q-5-sp">
+
+      <h5>Q5 地方や海外からの参加は可能ですか？</h5>
+
+      <p>EDENはオンライン完結サービスのため、</p>
+      <p>国内、海外どこからでも参加が可能です。</p>
+      <p>遠隔でもしっかりサポートが受けられます。</p>
+      
+    </div>
+
+    <div class="q-6-sp">
+
+      <h5>Q6 どのような学習形態ですか？</h5>
+
+      <p>Slack上でのやりとりになります。</p>
+      <p>基本的には</p>
+      <p>テキストやzipファイルのやりとりです。</p>
+      
+    </div>
+  	
+  </div>
+  
+</div><!-- faq-wrapper -->
+
+<div class="message-wrapper text-center">
+
+  <div class="messagew-title">
+
+    <h1>MESSAGE</h1>
+    
+  </div>
+
+  <div class="container">
+
+    <div class="messagew-subtitle">
+
+      <h5>EDENはプログラミングを手段として、 人生の選択肢を広げる方法をお伝えしたい。</h5>
+      
+    </div>
+    
+  </div>
+
+  <div class="messagew-main">
+
+    <p>プログラミングは手段でしかありません。</p>
+
+    <p class="messagewm-p-1">自分のやりたいこと、理想のライフスタイルを叶えるための手段としてのプログラミングです。</p>
+
+    <p class="messagewm-p-1">例えば、月５万でも稼ぐことができれば、タイなどの物価の安い東南アジアで暮らしていくことができます。</p>
+
+    <p class="messagewm-p-1">あなたがもし、</p>
+
+    <p class="messagewm-p-1">「プログラミングを通して人生の選択肢を広げたい」</p>
+
+    <p>と少しでも思っていらっしゃるのであれば、</p>
+
+    <p>EDENは全力でサポートさせていただきます。</p>
+    
+  </div>
+
+  <div class="container">
+
+  	<div class="messagew-subtitle-sp text-center">
+
+  		<h5>EDENは</h5>
+  		<h5>プログラミングを</h5>
+  		<h5>手段として、</h5>
+  		<h5>人生の選択肢を</h5>
+  		<h5>広げる方法をお伝えしたい。</h5>
+  		
+  	</div>
+  	
+  </div>
+
+  <div class="messagew-main-sp text-center">
+
+  	<div class="container">
+
+  		<p>プログラミングは手段でしかありません。</p>
+  		<p>自分のやりたいこと、</p>
+  		<p>理想のライフスタイルを</p>
+  		<p class="messagew-main-sp-p">叶えるための手段としてのプログラミングです。</p>
+
+  		<p>例えば、</p>
+  		<p>月５万でも稼ぐことができれば、</p>
+  		<p>タイなどの物価の安い東南アジアで</p>
+  		<p class="messagew-main-sp-p">暮らしていくことができます。</p>
+
+  		<p class="messagew-main-sp-p">あなたがもし、</p>
+
+  		<p>「プログラミングを通して</p>
+  		<p class="messagew-main-sp-p">人生の選択肢を広げたい」</p>
+
+  		<p>と少しでも思っていらっしゃるのであれば、</p>
+  		<p>EDENは</p>
+  		<p>全力でサポートさせていただきます。</p>
+
+  	</div>
+  	
+  </div>
+  
+</div><!-- message-wrapper -->
+
+<div class="contact-wrapper text-center" id="7">
+
+  <div class="contactw-title">
+
+    <h1>CONTACT</h1>
+    
+  </div>
+
+  <div class="contactw-subtitle">
+
+    <h5>-質問・面談のお申込みはこちらから-</h5>
+    
+  </div>
+
+  <div class="contactw-main">
+
+    <div class="container">
+
+      <p class="contactwm-1"><i class="fas fa-exclamation-triangle"></i> 残りわずか！</p>
+
+      <input type="text" value="お名前" class="contactwm-2">
+
+      <input type="text" value="メールアドレス" class="contactwm-3">
+
+      <textarea class="contactwm-4">質問はこちらからお願いします</textarea>
+
+      <p class="contactwm-5">!送　信!</p>
+
+    </div>  
+    
+  </div><!-- contactw-main -->
+
+  <div class="contactw-image">
+
+  	<div class="container" id="pagetop">
+
+  		<img src="img/06.png" alt="">
+  		
+  	</div>
+  	
+  </div>
+
+</div><!-- contact-wrapper -->
+
+<footer>
+  
+  <div class="container">
+
+    <div class="footer-left">
+
+      <img src="img/07.png" alt=""> <img src="img/02.png" alt=""> <img src="img/08.png" alt="">
+      
+    </div>
+
+    <div class="footer-center text-center">
+
+      <h5>< /EDEN ></h5>
+      <p>©︎</EDEN> All Rights Reserved.</p>
+      
+    </div>
+
+    <div class="footer-right">
+
+      <img src="img/08.png" alt=""> <img src="img/04.png" alt=""> <img src="img/09.png" alt="">
+      
+    </div>
+    
+  </div>
+
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,931 @@
+@font-face {
+	font-family:Milonga;
+	src: url('fonts/Milonga-Regular.ttf') format("truetype");
+}
+
+@font-face {
+	font-family:851H-kktt;
+	src: url('fonts/851H-kktt_004.ttf') format("truetype");
+}
+
+@font-face {
+	font-family:Anders;
+	src: url('fonts/Anders.ttf') format("truetype");
+}
+
+body{
+	font-family:'-apple-system','BlinkMacSystemFont','Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic','sans-serif';
+}
+
+header{
+	background-image: url(img/kelly-lund-708920-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 850px;
+	padding-top: 50px;
+}
+
+.header-top{
+	height: 150px;
+}
+
+.header-top h1{
+	 float: left;
+}
+
+.header-top h1 a{
+	font-family: "Milonga";
+	color: white;
+}
+
+.header-top nav{
+	float: right;
+	margin-top: 10px;
+}
+
+.header-top nav ul li{
+	list-style: none;
+}
+
+.header-top nav ul li a{
+	font-family: "Anders";
+	color: white;
+}
+
+.header-title{
+	font-size: 90px;
+}
+
+.header-title p{
+	color: white;
+	font-family: "851H-kktt";
+}
+
+.header-btn button{
+	background-color: #663399;
+	color: white;
+	padding: 10px 70px;
+	margin-top: 80px;
+	font-family: "851H-kktt";
+}
+
+.about-wrapper{
+	background-color: black;
+	padding-top: 50px;
+	height: 1050px;
+}
+
+.aw-title h1{
+	color: white;
+	margin-bottom: 50px;
+	font-family: "Anders";
+}
+
+.aw-main{
+	border: 15px solid white;
+	height: 650px;
+}
+
+.awm-img{
+	float: left;
+	border-right: 15px solid white;
+	height: 630px;
+}
+
+.awm-p1{
+	border-bottom: 15px solid white;
+	width: 613px;
+	height: 325px;
+	float: left;
+	text-align: center;
+	padding-top: 80px;
+	font-family: "851H-kktt";
+}
+
+.awm-p1 i{
+	color: white;
+	margin-top: 67px;
+	background-color: black;
+}
+
+.awm-p2{
+	float: left;
+	text-align: center;
+	padding-top: 80px;
+	width: 613px;
+	font-family: "851H-kktt";
+}
+
+.awm-p1 p, .awm-p2 p{
+	color: white;
+	font-size: 20px;
+}
+
+.awm-last p{
+	color: white;
+}
+
+.awml-p{
+	display: block;
+	font-size: 25px;
+	letter-spacing: 4px;
+	margin-top: -115px;
+	margin-left: 110px;
+	font-family: "851H-kktt";
+}
+
+.awml-span1, .awml-span2{
+	font-size: 150px;
+}
+
+.awml-span2{
+	display: block;
+	margin-top: -147px;
+	margin-left: 1025px;
+}
+
+.info-wrapper{
+	background-image: url("img/s_marek-szturc-474971-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1050px;
+	padding-top: 50px;
+	font-family: "851H-kktt";
+	position: relative;
+}
+
+.iw-title{
+	color: white;
+}
+
+.iw-title p{
+	margin: 50px 0px;
+}
+
+.iw-list{
+	border: 1px solid white;
+	border-radius: 10px;
+	width:50%;
+	height: 560px;
+	float: left;
+	color: white;
+}
+
+.iw-list ul li{
+	list-style: none;
+	margin-top: 40px;
+}
+
+.iw-list ul li span{
+	margin-right: 20px;
+}
+
+.iw-q-1{
+	color: white;
+	position: absolute;
+	top: 280px;
+	left: 1180px;
+}
+
+.iw-q-2{
+	color: white;
+	position: absolute;
+	top: 200px;
+	left: 1000px;
+}
+
+.iw-image{
+	float: left;
+	width: 50%;
+	margin-top: 10px;
+	height: 600px;
+}
+
+.iw-image img{
+	height: 550px;
+}
+
+.iw-last{
+	color: white;
+	border-bottom: double;
+	width: 450px;
+	margin-left: 330px;
+}
+
+.triangle{
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 50px solid white;
+  margin-left: 465px;
+  margin-top: 20px;
+}
+
+.merit-wrapper{
+	height: 750px;
+	padding-top: 70px;
+	background-image: url("img/tom-morales-601007-unsplash.jpg");
+	background-size: cover;
+	color: white;
+	font-family: "851H-kktt";
+}
+
+.merit-wrapper h1{
+	margin-bottom: 70px;
+}
+
+.mwm-p1{
+	width: 25%;
+	float: left;
+}
+
+.mwm-p2{
+	width: 33%;
+	float: left;
+	margin-left: 75px;
+}
+
+.mwm-p3{
+	width: 25%;
+	float: right;
+	margin-right: 45px;
+}
+
+.mwm-p1 span, .mwm-p2 span, .mwm-p3 span{
+	font-size: 40px;
+}
+
+.mwm-p-title{
+	font-size: 20px;
+	margin-bottom: 70px;
+}
+
+.mwm-m{
+	margin-top: 70px;
+}
+
+.school-wrapper{
+	background-image: url("img/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	padding-top: 50px;
+	height: 770px;
+	font-family: "851H-kktt";
+}
+
+.sw-title{
+	margin-bottom: 50px;
+}
+
+.sw-main{
+	height: 500px;
+}
+
+.swm-p{
+	text-align: center;
+	border: 1px solid white;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+.swm-1{
+	float: left;
+}
+
+.swm-2{
+	float: left;
+	margin-left: 75px;
+}
+
+.swm-3{
+	float: right;
+}
+
+.sw-last p{
+	font-size: 23px;
+}
+
+.sw-last p span{
+	border-bottom: 5px double white;
+}
+
+.curriculum-wrapper{
+	padding-top: 50px;
+	background-image: url("img/marek-szturc-458628-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 800px;
+	color: white;
+	position: relative;
+}
+
+.cw-title{
+	margin-bottom: 50px;
+	font-family: "Milonga";
+}
+
+.cwm-1{
+	padding-top: 110px;
+}
+
+.cwm-1-first-p{
+	font-family: "851H-kktt";
+}
+
+.cw-main{
+	height: 500px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	padding-top: 150px;
+}
+
+.cw-main-border{
+	border-right: 3px solid white;
+	margin-right: 20px;
+	border-left: 3px solid white;
+	margin-left: 20px;
+	height: 550px;
+	margin-top: -277px;
+}
+
+.cw-main-b-1{
+	margin-top: 100px;
+}
+
+.cwm-1-list{
+	height: 200px;
+	padding-left: 80px;
+}
+
+.cwm1list-1, .cwm1list-2{
+	float: left;
+	border-left: 1px dotted white;
+	height: 225px;
+	width: 225px;
+	padding-top: 112px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.cwm1list-1 img, .cwm1list-2 img{
+	width: 50px;
+}
+
+.cwm1list-3, .cwm1list-4{
+	float: left;
+	border-left: 1px dotted white;
+	height: 225px;
+	width: 225px;
+	text-align: center;
+	padding: 46px 20px 0px 10px;
+	font-size: 15px;
+	position: relative;
+	font-family: "851H-kktt";
+}
+
+.cwm1list-4{
+	border-right: 1px dotted white;
+}
+
+.cwm1list-box1{
+	border: 1px solid #339999;
+	background-color: #339999;
+	width: 450px;
+	height: 50px;
+	float: left;
+	padding-top: 12px;
+	margin-top: -200px;
+	position: relative;
+	z-index: 2;
+}
+
+.cwm1list-box1 span{
+	font-family: "851H-kktt";
+}
+
+.cwm1list-box2{
+	border: 1px solid #006699;
+	background-color: #006699;
+	width: 450px;
+	height: 50px;
+	float: left;
+	padding-top: 12px;
+	margin-top: -70px;
+	margin-left: 450px;
+	position: relative;
+	z-index: 2;
+	font-family: "851H-kktt";
+}
+
+.cwm-1-list-p1{
+	position: absolute;
+	top: 500px;
+	left: 268px;
+	font-family: "851H-kktt";
+}
+
+.cwm-1-list-p2{
+	position: absolute;
+	top: 500px;
+	left: 1105px;
+	font-family: "851H-kktt";
+}
+
+.cw-last{
+	margin: 90px;
+	font-family: "851H-kktt";
+}
+
+.support-wrapper{
+	background-image: url("img/matan-elihay-458228-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	padding-top: 50px;
+	height: 1050px;
+}
+
+.support-wrapper h1{
+	font-family: "Milonga";
+}
+
+.support-wrapper p{
+	font-family: "851H-kktt";
+}
+
+.swm-top p{
+	margin-bottom: 30px;
+}
+
+.swm-left, .swm-center{
+	float: left;
+}
+
+.swm-left{
+	margin-left: 170px;
+}
+
+.swm-left img{
+	width: 250px;
+}
+
+.swml-p{
+	font-size: 30px;
+}
+
+.swm-center{
+	margin-top: 80px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.swm-right{
+	float: left;
+	margin-top: 50px;
+}
+
+.sw-details img{
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+.swd-1, .swd-2, .swd-3{
+	float: left;
+	text-align: center;
+}
+
+.swd-2{
+	margin-left: 90px;
+}
+
+.swd-3{
+	margin-left: 50px;
+}
+
+.sankaku-border{
+	border-bottom: 3px solid white;
+}
+
+.sankaku{
+	margin-top: -25px;
+}
+
+.price-wrapper{
+	background-image: url("img/jachan-devol-525025-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	height: 730px;
+	padding-top: 50px;
+}
+
+.price-wrapper h1{
+	margin-bottom: 50px;
+	font-family: "Milonga";
+}
+
+.pw-subtitle p{
+	font-family: "851H-kktt";
+}
+
+.pw-list{
+	margin-top: 50px;
+}
+
+.pw-list table{
+	width: 100%;
+	font-family: 851H-kktt;
+}
+
+.pw-list table thead tr th{
+	height: 80px;
+}
+
+.pw-list table tbody tr td{
+	height: 50px;
+}
+
+.pw-eden{
+	border: 3px solid purple;
+	background-color: purple;
+	font-family: "Milonga";
+}
+
+.pw-eden-list{
+	border-left: 3px solid purple;
+	border-bottom: 3px solid purple;
+	border-right: 3px solid purple;
+	font-family: "851H-kktt";
+}
+
+.pw-list1{
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	font-family: "851H-kktt";
+}
+
+.pw-list2{
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	font-family: "851H-kktt";
+}
+
+.flow-wrapper{
+	background-image: url("img/patrick-hendry-723641-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	height: 800px;
+	padding-top: 50px;
+}
+
+.flow-wrapper p, h5{
+	font-family: "851H-kktt";
+}
+
+.fw-title{
+	margin-bottom: 50px;
+	font-family: "Milonga";
+}
+
+.fw-subtitle{
+	margin-bottom: 100px;
+}
+
+.hexagon {
+  position: relative;
+  width: 150px; 
+  height: 86.60px;
+  background-color: #000000;
+  box-shadow: 0 0 20px rgba(0,0,0,0);
+  border-left: solid 10px #ffffff;
+  border-right: solid 10px #ffffff;
+  z-index: 1;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 106.07px;
+  height: 106.07px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 11.9670px;
+  box-shadow: 0 0 20px rgba(0,0,0,0);
+}
+
+.hexagon:before {
+  top: -53.0330px;
+  border-top: solid 14.1421px #ffffff;
+  border-right: solid 14.1421px #ffffff;
+}
+
+.hexagon:after {
+  bottom: -53.0330px;
+  border-bottom: solid 14.1421px #ffffff;
+  border-left: solid 14.1421px #ffffff;
+}
+
+/*cover up extra shadows*/
+.hexagon span {
+  display: block;
+  position: absolute;
+  top:5.773502691896257px;
+  left: 0;
+  width:130px;
+  height:75.0555px;
+  z-index: 2;
+  background: inherit;
+}
+
+.sankaku-border-2{
+	border-bottom: 3px solid white;
+	margin-top: 30px;
+}
+
+.sankaku-2{
+	margin-top: -25px;
+}
+
+.fwm-1, .fwm-2, .fwm-3{
+	float: left;
+	position: relative;
+	text-align: center;
+}
+
+.fwm-4{
+	float: right;
+	position: relative;
+	text-align: center;
+}
+
+.fwm-1 div{
+	margin-left: 50px;
+}
+
+.fwm-1 h5{
+	margin-top: 100px;
+}
+
+.fwm-yajirushi-1, .fwm-yajirushi-2, .fwm-yajirushi-3{
+	float: left;
+	margin-top: 10px;
+}
+
+.fwm-1 img{
+	position: absolute;
+	top: 10px;
+	left: 93px;
+	z-index: 2;
+}
+
+.fwm-yajirushi-1{
+	margin-right: 40px;
+	margin-left: -10px;
+}
+
+.fwm-2 img{
+	position: absolute;
+	top: 10px;
+	left: 45px;
+	z-index: 2;
+}
+
+.fwm-2 h5{
+	margin-top: 100px;
+	margin-left: -40px;
+}
+
+.sb2-2, .s2-2{
+	margin-left: -40px;
+}
+
+.fwm-2 p{
+	margin-left: -40px;
+}
+
+.fwm-yajirushi-2{
+	margin-left: 5px;
+	margin-right: 35px;
+}
+
+.fwm-3 img{
+	position: absolute;
+	top: 10px;
+	left: 45px;
+	z-index: 2;
+}
+
+.fwm-3 h5{
+	margin-top: 100px;
+	margin-left: -20px;
+}
+
+.sb2-3, .s2-3{
+	margin-left: -20px;
+}
+
+.fwm-3 p{
+	margin-left: -20px;
+}
+
+.fwm-yajirushi-3{
+	margin-left: 30px;
+	margin-right: 25px;
+}
+
+.fwm-4 img{
+	position: absolute;
+	top: 10px;
+	left: 45px;
+	z-index: 2;
+}
+
+.fwm-4 h5{
+	margin-top: 100px;
+	margin-left: -25px;
+}
+
+.sb2-4, .s2-4{
+	margin-left: -25px;
+}
+
+.fwm-4 p{
+	margin-left: -25px;
+}
+
+.faq-wrapper{
+	background-image: url("img/gregoire-bertaud-556145-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 50px;
+	color: white;
+	height: 1200px;
+}
+
+.faq-wrapper h5, .faq-wrapper p{
+	font-family: "851H-kktt";
+}
+
+.faqw-title{
+	margin-bottom: 50px;
+	font-family: "Milonga";
+}
+
+.q-1, .q-2, .q-3, .q-4, .q-5, .q-6{
+	border-left: 1px solid white;
+	border-bottom: 1px solid white;
+	width: 50%;
+	height: 230px;
+	float: left;
+} 
+
+.q-2, .q-3{
+	margin-top: 50px;
+}
+
+.q-4{
+	margin-top: 100px;
+}
+
+.q-5{
+	margin-top: 50px;
+}
+
+.q-6{
+	margin-top: 100px;
+}
+
+.q-1 h5, .q-2 h5, .q-3 h5, .q-4 h5, .q-5 h5, .q-6 h5{
+	margin: 30px 0px;
+}
+
+.message-wrapper{
+	background-color: #222222;
+	color: white;
+	padding-top: 50px;
+	height: 750px;
+}
+
+.message-wrapper p{
+	font-family: "851H-kktt";
+}
+
+.messagew-title{
+	margin-bottom: 50px;
+	font-family: "Milonga";
+}
+
+.messagew-subtitle{
+	border: 3px solid white;
+	margin-bottom: 50px;
+	padding: 30px 0px;
+}
+
+.messagewm-p-1{
+	margin-bottom: 50px;
+}
+
+.contact-wrapper{
+	padding-top: 50px;
+	background-image: url("img/david-dibert-499250-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 800px;
+}
+
+.contactw-title, .contactw-subtitle{
+	margin-bottom: 50px;
+	color: white;
+	font-family: "Milonga";
+}
+
+.contactwm-1{
+	border: 1px solid #FF00FF;
+	border-radius: 10px;
+	background-color: #FF00FF;
+	color: white;
+	width: 20%;
+	padding: 10px 0;
+	margin-left: 450px;
+	font-family: "851H-kktt";
+}
+
+.contactwm-2, .contactwm-3, .contactwm-4{
+	width: 100%;
+	border-radius: 10px;
+}
+
+.contactwm-2, .contactwm-3{
+	margin-bottom: 20px;
+	padding: 10px 0;
+	color: gray;
+}
+
+.contactwm-4{
+	height: 100px;
+	color: gray;
+}
+
+.contactwm-5{
+	border: 1px solid #FF00FF;
+	background-color: #FF00FF;
+	color: white;
+	width: 30%;
+	padding: 10px 0;
+	box-shadow: 0px 5px purple;
+	margin-left: 390px;
+	margin-top: 20px;
+	font-family: "851H-kktt";
+}
+
+.contactw-image img{
+	float: right;
+}
+
+.contactw-image img{
+	width: 200px;
+}
+
+#pagetop{
+	cursor: pointer;
+}
+
+footer{
+	background-color: #222222;
+	color: white;
+	height: 150px;
+	padding-top: 25px;
+}
+
+footer img{
+	width: 125px;
+	height: 100px;
+}
+
+.footer-left, .footer-center{
+	float: left;
+}
+
+.footer-right{
+	float: right;
+}
+
+.footer-center{
+	margin-left: 100px;
+	margin-top: 25px;
+	font-family: "Milonga";
+}
+
+.header-title-sp, .awm-last-sp, .iw-title-p-sp, .iw-last-sp, .mw-main-sp, .sw-last-sp, .cw-main-sp, .swm-sp-p, .pw-subtitle-sp, .faqw-main-sp, .messagew-subtitle-sp, .messagew-main-sp{
+	display: none;
+}
